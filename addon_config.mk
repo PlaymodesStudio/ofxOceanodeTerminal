@@ -15,16 +15,16 @@
 # and the PG will write to the console the kind of error and in which line it is
 
 meta:
-	ADDON_NAME = ofxOceanode_Osc
-	ADDON_DESCRIPTION = Osc def for ofxOceanode
+	ADDON_NAME = ofxOceanodeTerminal
+	ADDON_DESCRIPTION = Terminal interaction def for ofxOceanode
 	ADDON_AUTHOR = @PlaymodesStudio
-	ADDON_TAGS = "osc" "ofxOceanode"
-	ADDON_URL = https://github.com/PlaymodesStudio/ofxOceanode_Osc
+	ADDON_TAGS = "Terminal" "ofxOceanode"
+	ADDON_URL = https://github.com/PlaymodesStudio/ofxOceanodeTerminal
 
 common:
 	# dependencies with other addons, a list of them separated by spaces
 	# or use += in several lines
-	# ADDON_DEPENDENCIES = ofxOsc
+	ADDON_DEPENDENCIES = ofxNcurses
 
 	# include search paths, this will be usually parsed from the file system
 	# but if the addon or addon libraries need special search paths they can be
@@ -33,7 +33,7 @@ common:
 
 	# any special flag that should be passed to the compiler when using this
 	# addon
-	# ADDON_CPPFLAGS = OFXOCEANODE_USE_OSC
+	# ADDON_CPPFLAGS = OFXOCEANODE_TERMINAL
 
 	# any special flag that should be passed to the linker when using this
 	# addon, also used for system libraries with -lname
@@ -53,7 +53,7 @@ common:
 	# ADDON_SOURCES =
 
 	# derines that will be passed to the compiler when including this addon
-	ADDON_DEFINES = OFXOCEANODE_USE_OSC
+	ADDON_DEFINES = OFXOCEANODE_TERMINAL
 
 	# some addons need resources to be copied to the bin/data folder of the project
 	# specify here any files that need to be copied, you can use wildcards like * and ?
